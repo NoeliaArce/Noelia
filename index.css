@@ -181,7 +181,7 @@ select{
 
     background:#f5eafb;
 
-    color:#40805a;
+    color:#d180c1;
 
     font-size:28px;
 
@@ -215,7 +215,7 @@ select{
     border:2px solid #d8b4e8;
 
     box-shadow:
-    0 5px 15px rgba(90,50,110,0.2);
+    0 5px 15px rgba(137, 23, 194, 0.2);
 
     transition:0.3s;
 }
@@ -286,8 +286,6 @@ h3{
     background:#25D366;
     color:white;
 }
-
-
 /* =========================
    PROMOCIONES
 ========================= */
