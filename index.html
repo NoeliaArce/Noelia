@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Princess Bows</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+     ENCABEZADO
+========================= -->
+
+<header>
+
+    <img class="logo" src="LOGO.jpeg">
+
+    <h1>Princess Bows</h1>
+
+    <p style="font-size:35px;color:#7b3f8c;">
+        Moños y accesorios únicos para niñas
+    </p>
+
+</header>
+
+
+<!-- =========================
+     MENU
+========================= -->
+
+<nav class="barra-menu">
+
+    <button
+        id="menuToggle"
+        class="boton-menu"
+        onclick="toggleMenu()">
+
+        ☰
+
+    </button>
+
+    <div
+        id="menu"
+        class="menu-desplegable">
+
+        <button
+            onclick="mostrarSeccion('inicio'); cerrarMenu()">
+
+            Inicio
+
+        </button>
+
+        <button
+            onclick="mostrarSeccion('catalogoSeccion'); cerrarMenu()">
+
+            Catálogo
+
+        </button>
+
+        <button
+            onclick="mostrarSeccion('promociones'); cerrarMenu()">
+
+            Promociones
+
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     INICIO
+========================= -->
+
+<section
+    class="seccion activa inicio"
+    id="inicio">
+
+    <h2>Bienvenidos</h2>
+
+    <div class="presentacion">
+
+        <p>
+
+            Princess Bows es un emprendimiento
+            dedicado a la venta de moños,
+            winchas, lazos y accesorios
+            infantiles y/o para adolescentes.
+
+            Diseñados con creatividad,
+            elegancia y estilo.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Las responsables y encargadas
+            de la página web y el emprendimiento son:
+
+            <b>Noelia Arce Meneces</b>
+
+            e
+
+            <b>Hilda Soria Calveti</b>.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CATÁLOGO
+========================= -->
+
+<section
+    class="seccion"
+    id="catalogoSeccion">
+
+    <h2
+        style="
+        text-align:center;
+        color:#7b3f8c;
+        font-size:60px;
+        ">
+
+        Catálogo General
+
+    </h2>
+
+    <div class="filtros">
+
+        <select id="categoria">
+
+            <option value="todos">
+                Categoría
+            </option>
+
+            <option value="moños">
+                Moños
+            </option>
+
+            <option value="lazos">
+                Lazos
+            </option>
+
+            <option value="winchas">
+                Winchas
+            </option>
+
+            <option value="trabas">
+                Trabas
+            </option>
+
+        </select>
+
+
+        <select id="color">
+
+            <option value="todos">
+                Color
+            </option>
+
+            <option value="rosa">
+                Rosa
+            </option>
+
+            <option value="azul">
+                Azul
+            </option>
+
+            <option value="rojo">
+                Rojo
+            </option>
+
+            <option value="guindo">
+                Guindo
+            </option>
+
+            <option value="morado">
+                Morado
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div
+        class="catalogo"
+        id="catalogoProductos">
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROMOCIONES
+========================= -->
+
+<section
+    class="seccion promociones"
+    id="promociones">
+
+    <h2>
+        Promociones Especiales
+    </h2>
+
+    <div
+        class="promos"
+        id="promosContainer">
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © 2026 Princess Bows |
+    Todos los derechos reservados
+
+</footer>
+
+
+<!-- =========================
+     MODAL
+========================= -->
+
+<div
+    class="modal-overlay"
+    id="modalOverlay">
+
+    <div class="modal">
+
+        <button
+            class="modal-close"
+            onclick="cerrarModal()">
+
+            ✕
+
+        </button>
+
+        <img
+            id="modalImg"
+            src="">
+
+        <h3
+            id="modalNombre">
+        </h3>
+
+        <p
+            id="modalPrecio">
+        </p>
+
+        <p
+            id="modalDesc">
+        </p>
+
+        <div class="modal-btns">
+
+            <button
+                class="comprar"
+                onclick="comprarModal()">
+
+                Comprar
+
+            </button>
+
+            <button
+                class="whatsapp"
+                onclick="whatsappModal()">
+
+                WhatsApp
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="index.js"></script>
+
+</body>
+
+</html>

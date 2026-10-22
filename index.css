@@ -1,0 +1,536 @@
+/* =========================
+   ESTILO GENERAL
+========================= */
+/* =========================
+   FONDO
+========================= */
+body{
+    margin:0;
+    background:linear-gradient(135deg,#f3e5f5,#e8d5f2,#f5eafb);
+    overflow-x:hidden;
+}
+
+header{
+    text-align:center;
+    padding:20px;
+}
+/* =========================
+LOGO
+========================= */
+.logo{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #b57edc;
+}
+
+h1{
+    font-family:'Dancing Script',cursive;
+    font-size:80px;
+    margin:10px 0;
+
+    background:linear-gradient(90deg,#7b3f8c,#b57edc);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+body,
+p,
+button,
+select,
+option,
+a,
+h2,
+h3{
+    font-family:'Dancing Script',cursive;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.barra-menu{
+    background:#d8b4e8;
+    padding:12px 20px;
+    text-align:center;
+    position:relative;
+}
+
+.boton-menu{
+    background:#8e5aa7;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:15px;
+    font-size:30px;
+    cursor:pointer;
+    transition:0.3s;
+    margin-right:10px;
+}
+
+.boton-menu:hover{
+    background:#704080;
+    transform:scale(1.05);
+}
+
+.menu-desplegable{
+    display:none;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-top:10px;
+}
+
+.menu-desplegable.abierto{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.menu-desplegable button{
+    background:#eee0f5;
+    color:#704080;
+
+    border:2px solid #b57edc;
+
+    padding:10px 25px;
+
+    border-radius:20px;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    font-family:'Dancing Script',cursive;
+
+    transition:0.3s;
+}
+
+.menu-desplegable button:hover{
+    background:#b57edc;
+    color:white;
+    transform:scale(1.05);
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.seccion{
+    display:none;
+    padding:40px 20px;
+}
+
+.activa{
+    display:block;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.inicio{
+    text-align:center;
+}
+
+.inicio h2{
+    color:#7b3f8c;
+    font-size:55px;
+}
+
+.presentacion{
+    max-width:900px;
+    margin:auto;
+
+    background:#fffaff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(90,50,110,0.2);
+}
+
+.presentacion p{
+    font-size:35px;
+    line-height:1.8;
+    color:#704080;
+}
+
+
+/* =========================
+   FILTROS
+========================= */
+
+.filtros{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+select{
+    padding:12px 20px;
+
+    border-radius:20px;
+
+    border:2px solid #b57edc;
+
+    background:#f5eafb;
+
+    color:#40805a;
+
+    font-size:28px;
+
+    margin:5px;
+
+    cursor:pointer;
+}
+
+
+/* =========================
+   CATÁLOGO
+========================= */
+
+.catalogo{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.producto{
+    background:
+    linear-gradient(135deg,#e8d5f2,#f3e5f5);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:2px solid #d8b4e8;
+
+    box-shadow:
+    0 5px 15px rgba(90,50,110,0.2);
+
+    transition:0.3s;
+}
+
+.producto:hover{
+    transform:scale(1.03);
+}
+
+.producto img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.info{
+    padding:15px;
+    text-align:center;
+}
+
+h3{
+    font-size:38px;
+    color:#7b3f8c;
+}
+
+.precio{
+    color:#8e5aa7;
+    font-size:32px;
+}
+
+.botones{
+    display:flex;
+    gap:5px;
+    margin-top:10px;
+    flex-wrap:wrap;
+}
+
+.botones button{
+    flex:1;
+
+    padding:10px;
+
+    border:none;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    transition:0.2s;
+}
+
+.botones button:hover{
+    transform:scale(1.05);
+}
+
+.ver{
+    background:#d8b4e8;
+    color:#704080;
+}
+
+.comprar{
+    background:#8e5aa7;
+    color:white;
+}
+
+.whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+
+/* =========================
+   PROMOCIONES
+========================= */
+
+.promociones h2{
+    text-align:center;
+    color:#7b3f8c;
+    font-size:60px;
+}
+
+.promos{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    margin-top:30px;
+}
+
+.promo{
+    background:#fffaff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 5px 15px rgba(90,50,110,0.2);
+
+    text-align:center;
+}
+
+.promo img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.promo p{
+    font-size:30px;
+    color:#704080;
+}
+
+.promo button{
+    background:#8e5aa7;
+
+    color:white;
+
+    margin:15px;
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+.promo button:hover{
+    background:#704080;
+    transform:scale(1.05);
+}
+
+.badge-desc{
+    display:inline-block;
+
+    background:#8e5aa7;
+
+    color:white;
+
+    border-radius:12px;
+
+    padding:5px 15px;
+
+    font-size:24px;
+
+    margin-top:5px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#b57edc;
+
+    color:white;
+
+    text-align:center;
+
+    padding:15px;
+
+    font-size:28px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-overlay{
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(60,30,70,0.6);
+
+    z-index:1000;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-overlay.open{
+    display:flex;
+}
+
+.modal{
+    background:
+    linear-gradient(135deg,#f3e5f5,#f5eafb);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    max-width:500px;
+
+    width:90%;
+
+    box-shadow:
+    0 10px 40px rgba(90,50,110,0.4);
+
+    text-align:center;
+
+    position:relative;
+}
+
+.modal img{
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+}
+
+.modal h3{
+    font-size:42px;
+
+    color:#7b3f8c;
+}
+
+.modal p{
+    font-size:28px;
+
+    color:#704080;
+}
+
+.modal-close{
+    position:absolute;
+
+    top:15px;
+    right:20px;
+
+    background:none;
+
+    border:none;
+
+    font-size:36px;
+
+    cursor:pointer;
+
+    color:#7b3f8c;
+}
+
+.modal-btns{
+    display:flex;
+
+    gap:10px;
+
+    margin-top:15px;
+
+    justify-content:center;
+}
+
+.modal-btns button{
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    font-family:'Dancing Script',cursive;
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media(max-width:600px){
+
+    h1{
+        font-size:55px;
+    }
+
+    .presentacion p{
+        font-size:27px;
+    }
+
+    .inicio h2{
+        font-size:45px;
+    }
+
+    .promociones h2{
+        font-size:45px;
+    }
+
+    .menu-desplegable.abierto{
+        flex-direction:column;
+    }
+
+    .menu-desplegable button{
+        width:200px;
+    }
+
+}
